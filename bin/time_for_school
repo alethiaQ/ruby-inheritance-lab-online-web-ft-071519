@@ -17,11 +17,19 @@ some_knowledge = avi.teach
 
 steve.learn(some_knowledge)
 
-puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+
 
 
  jim = User.new
  jim.first_name = "Jimmy"
  jim.last_name = "Jon"
 
- jim.learn 
+more_knowledge = avi.teach
+steve.learn(more_knowledge)
+
+leeth = Student.new
+leeth.first_name = "Leethie"
+leeth.last_name = "Quintero"
+leeth.learn(more_knowledge)
+
+puts "Steve learned this important knowledge: '#{steve.knowledge}', while Leethie only learned '#{leeth.knowledge}' from Avi"
